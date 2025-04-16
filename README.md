@@ -34,14 +34,14 @@ These results highlight the importance of advanced computational tools for genet
    ```
    
 4. **Generate ROC plots for individual prediction tools**
-Run this script for each of the tools (SIFT, PolyPhen-2, and the baseline model).
+   Run this script for each of the tools (SIFT, PolyPhen-2, and the baseline model).
 
   ```bash
   python3 skeleton_script_create_roc_plot.py -ibench data/HGVS_2020_benchmark.tsv -ipred data/vep/HGVS_2020_small_polyphen_scores.tsv -o          output/ROCplot_HGVS_2020_small_polyphen_test.png -color
   ```
 
 5. **Create a combined ROC plot**
-This overlays the ROC curves of all three methods into one figure:
+   This overlays the ROC curves of all three methods into one figure:
   ```bash
   python3 skeleton_script_roc_plot_tsv.py \
   -itsv output/ROCplot_HGVS_2020_small_sift_test_xy.tsv \
